@@ -411,6 +411,100 @@ nav {
 }
 
 /* ============================================
+   HOW IT WORKS
+   ============================================ */
+.steps-grid {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.step-card {
+  flex: 1;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+}
+
+.step-arrow {
+  font-size: 1.5rem;
+  color: var(--accent);
+  padding: 0 1rem;
+  flex-shrink: 0;
+  font-family: var(--mono);
+}
+
+.step-num {
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.step-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.step-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  font-family: var(--mono);
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+.faq-section {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border2);
+  padding-bottom: 4rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border2);
+  border: 1px solid var(--border2);
+  margin: 2.5rem 2.5rem 0;
+}
+
+.faq-item {
+  background: var(--bg2);
+  padding: 1.75rem 2rem;
+  transition: background 0.2s;
+}
+
+.faq-item:hover { background: var(--bg3); }
+
+.faq-q {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+
+.faq-q::before {
+  content: '→ ';
+  color: var(--accent);
+  font-family: var(--mono);
+}
+
+.faq-a {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-family: var(--mono);
+}
+
+/* ============================================
    CTA SECTION
    ============================================ */
 .cta-section {
@@ -484,7 +578,11 @@ footer span {
     gap: 2rem;
   }
 
-  .cta-section { padding: 3.5rem 1.25rem; }
+  .steps-grid { flex-direction: column; }
+  .step-arrow { transform: rotate(90deg); padding: 0.5rem 0; }
+
+  .faq-grid { grid-template-columns: 1fr; margin: 2rem 1.25rem 0; }
+  .faq-section .section-header { padding: 3rem 1.25rem 0; }
 
   footer {
     flex-direction: column;
