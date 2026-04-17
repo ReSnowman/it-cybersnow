@@ -220,11 +220,81 @@
     </div>
   </section>
 
-  <!-- CONTACT CTA -->
-  <section class="cta-section" id="contact">
-    <h2>Let's fix it.</h2>
-    <p>Whether it's a slow computer, a security concern, or setting up your whole office — reach out and we'll figure it out together. First call is free.</p>
-    <a href="mailto:hello@cybersnow.io" class="btn-primary">book a free 15-min call</a>
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-header">
+      <span class="section-tag">// contact</span>
+      <h2 class="section-title">Let's fix it.</h2>
+      <p class="contact-sub">Whether it's a slow computer, a security concern, or setting up your whole office — reach out below or book a free 15-minute call directly on my calendar.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap">
+        <div class="contact-block-label">// send a message</div>
+        <form class="contact-form" action="https://formspree.io/f/maqaevzg" method="POST">
+          <div class="form-group">
+            <label for="name">your name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">your email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">what do you need help with?</label>
+            <select id="service" name="service">
+              <option value="">select a service...</option>
+              <option value="remote-support">Remote Support</option>
+              <option value="security-checkup">Security Checkup</option>
+              <option value="network-setup">Network Setup</option>
+              <option value="m365-cloud">M365 &amp; Cloud Setup</option>
+              <option value="device-setup">New Device Setup</option>
+              <option value="monthly-retainer">Monthly Retainer</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">tell me more</label>
+            <textarea id="message" name="message" rows="5" placeholder="Give me a quick rundown of what's going on..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; text-align:center;">send message →</button>
+        </form>
+      </div>
+
+      <!-- CALENDLY + INFO -->
+      <div class="contact-info-wrap">
+        <div class="contact-block-label">// book a call</div>
+        <div class="calendly-block">
+          <div class="calendly-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="calendly-text">
+            <div class="calendly-title">Free 15-min intro call</div>
+            <div class="calendly-desc">Pick a time that works for you. No pressure, no commitment — just a quick chat to figure out how I can help.</div>
+          </div>
+          <a href="https://calendly.com/jakobsnow" target="_blank" class="btn-primary" style="display:block; text-align:center; margin-top:1.25rem;">book a time →</a>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-block-label" style="margin-top:2rem;">// direct contact</div>
+          <div class="contact-detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:jakobsnow@cybersnow.io">jakobsnow@cybersnow.io</a>
+          </div>
+          <div class="contact-detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Fairfield County, CT — remote &amp; on-site</span>
+          </div>
+          <div class="contact-detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Typical response within 24 hours</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- FOOTER -->
